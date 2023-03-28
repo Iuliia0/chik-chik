@@ -26,13 +26,16 @@
   border-radius: 36px;
   cursor: pointer;
 }
-.radio__label:hover {
+.radio__label:hover:not(:disabled) {
   color: #EFE7BE;
 }
 .radio__input:focus + .radio__label,
 .radio__input:checked + .radio__label{
   color: #241D1C;
   background-color: #F6F3E3;
+}
+.radio__input:disabled + .radio__label{
+  opacity: 0.3;
 }
 .radio__label_spec {
   padding-left: 52px;

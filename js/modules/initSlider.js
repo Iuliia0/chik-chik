@@ -1,10 +1,4 @@
-const addPreload = (elem) => {
-  elem.classList.add('preload')
-}
-
-const removePreload = (elem) => {
-  elem.classList.remove('preload')
-}
+import { addPreload, removePreload } from './util.js';
 
 const startSlider = (slider) => {
   const sliderItems = document.querySelectorAll('.slider__item')
@@ -16,9 +10,9 @@ const startSlider = (slider) => {
   let position = 0;
 
   const checkSlider = () => {
-    if ((activeSlide + 2 === sliderItems.length && 
-        document.documentElement.offsetWidth > 560) ||
-        activeSlide === sliderItems.length) {
+    if ((activeSlide + 2 === sliderItems.length &&
+      document.documentElement.offsetWidth > 560) ||
+      activeSlide === sliderItems.length) {
       btnNextSlide.style.display = 'none'
     } else {
       btnNextSlide.style.display = ''
@@ -42,8 +36,8 @@ const startSlider = (slider) => {
     sliderItems[activeSlide]?.classList.add('slider__item_active')
 
     checkSlider()
-  }  
-  
+  }
+
   const prevSlide = () => {
     sliderItems[activeSlide]?.classList.remove('slider__item_active')
     position = -sliderItems[0].clientWidth * (activeSlide - 2)
@@ -63,15 +57,15 @@ const startSlider = (slider) => {
       activeSlide = sliderItems.length - 2
       sliderItems[activeSlide]?.classList.add('slider__item_active')
     }
-      position = -sliderItems[0].clientWidth * (activeSlide-1)
-      sliderList.style.transform = `translateX(${position}px)`
-      checkSlider()
+    position = -sliderItems[0].clientWidth * (activeSlide - 1)
+    sliderList.style.transform = `translateX(${position}px)`
+    checkSlider()
 
   })
 
 }
 
-const initSlider = () => {
+export const initSlider = () => {
   const slider = document.querySelector('.slider')
   const sliderContainer = document.querySelector('.slider__container')
   sliderContainer.style.display = 'none'
@@ -85,4 +79,3 @@ const initSlider = () => {
 
   })
 }
-window.addEventListener('DOMContentLoaded', initSlider)

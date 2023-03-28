@@ -21,7 +21,7 @@
   <link rel="stylesheet" href="./css/footer.css">
 
 
-  <script src="./js/script.js"></script>
+  <script src="./js/index.js" type="module"></script>
 </head>
 
 <body>
@@ -171,159 +171,159 @@
 
         <form class="reserve__form">
           <div class="reserve__form-container">
-            <fieldset class="reserve__fieldset">
+            <fieldset class="reserve__fieldset reserve__fieldset_service">
               <legend class="reserve__legend">Услуга</legend>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="service" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="service">
                 <span class="radio__label">Стрижка ножницами</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="service" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="service">
                 <span class="radio__label">Стрижка машинкой</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="service" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="service">
                 <span class="radio__label">Стрижка + стрижка бороды</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="service" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="service">
                 <span class="radio__label">Стрижка + моделирование бороды</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="service" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="service">
                 <span class="radio__label">Бритье головы</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="service" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="service">
                 <span class="radio__label">Укладка</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="service" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="service">
                 <span class="radio__label">Оформление бровей</span>
               </label>
 
             </fieldset>
 
-            <fieldset class="reserve__fieldset">
+            <fieldset class="reserve__fieldset" name="fieldspec">
               <legend class="reserve__legend">Специалист</legend>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="spec" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="spec">
                 <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec-1.png)">Игорь</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="spec" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="spec">
                 <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec-2.png)">Анатолий</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="spec" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="spec">
                 <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec-3.png)">Руслан</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="spec" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="spec">
                 <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec-4.png)">Михаил</span>
               </label>
 
-              <label for="" class="radio">
-                <input class="radio__input" type="radio" name="spec" id="">
+              <label class="radio">
+                <input class="radio__input" type="radio" name="spec">
                 <span class="radio__label radio__label_spec" style="--bg-image: url(../img/spec-5.png)">Евгений</span>
               </label>
 
             </fieldset>
 
-            <fieldset class="reserve__fieldset">
+            <fieldset class="reserve__fieldset" name="fielddata">
               <legend class="reserve__legend">Дата и время</legend>
-              <fieldset class="reserve__fieldset reserve__fieldset_sub">
+              <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldmonth">
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="month" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="month">
                   <span class="radio__label">Январь</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="month" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="month">
                   <span class="radio__label">Февраль</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="month" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="month">
                   <span class="radio__label">Март</span>
                 </label>
 
               </fieldset>
 
-              <fieldset class="reserve__fieldset reserve__fieldset_sub">
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="day" id="">
+              <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldday">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="day">
                   <span class="radio__label">18 января</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="day" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="day">
                   <span class="radio__label">19 января</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="day" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="day">
                   <span class="radio__label">20 января</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="day" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="day">
                   <span class="radio__label">21 января</span>
                 </label>
               </fieldset>
 
-              <fieldset class="reserve__fieldset reserve__fieldset_sub">
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="time" id="">
+              <fieldset class="reserve__fieldset reserve__fieldset_sub" name="fieldtime">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">10:00-11:30</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="time" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">11:30-13:00</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="time" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">13:00-14:30</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="time" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">14:30-16:00</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="time" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">16:00-17:30</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="time" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">17:30-19:00</span>
                 </label>
 
-                <label for="" class="radio">
-                  <input class="radio__input" type="radio" name="time" id="">
+                <label class="radio">
+                  <input class="radio__input" type="radio" name="time">
                   <span class="radio__label">19:00-20:30</span>
                 </label>
               </fieldset>
             </fieldset>
           </div>
 
-          <button class="reserve__btn main-link">Записаться</button>
+          <button class="reserve__btn main-link" disabled id="btn">Записаться</button>
         </form>
       </div>
     </section>
@@ -345,8 +345,10 @@
           </ul>
         </nav>
         <div class="footer__dev">
-          <div class="footer__description">Designer: Anastasia Ilina</div>
-          <div class="footer__description">Developer: Emelianova Iuliia</div>
+          <div class="footer__description">
+            <a href="https://t.me/Mrshamallowww">Designer: Anastasia Ilina</a></div>
+          <div class="footer__description">
+            <a href="https://t.me/jul55">Developer: Emelianova Iuliia</a></div>
         </div>
       </div>
 

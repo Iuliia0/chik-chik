@@ -15,9 +15,11 @@
   flex-grow: 1;
   justify-content: center;
 }
-.footer__dev {
+.footer__dev a{
   font-size: 12px;
 line-height: 100%;
+color: inherit;
+text-decoration: none;
 }
 .footer__description {
   margin-bottom: 7px;
